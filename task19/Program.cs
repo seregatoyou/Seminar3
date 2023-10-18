@@ -38,7 +38,7 @@ public class Answer
             i++;
         }
         System.Console.WriteLine($"{i}");
-        if (i < 5 || i > 5){
+        if (i < 9 || i > 9){
             System.Console.WriteLine("Число не пятизначное!");
             return false;
         }
@@ -66,7 +66,7 @@ public class Answer
             number = int.Parse(args[0]);
         } else {
            // Здесь вы можете поменять значения для отправки кода на Выполнение
-            number = 64546;
+            number = 645717546;
         }
 
         // Не удаляйте строки ниже
