@@ -1,0 +1,30 @@
+using System.Globalization;
+
+void IsPalindrome(int number){
+    "configurations": [
+    
+    ]
+        int h = number;
+        int i = 1;
+        while(number / 10 != 0){
+            number = number / 10;
+            i++;
+        }
+        System.Console.WriteLine($"{i}");
+        if (i < 5 || i > 5){
+            System.Console.WriteLine("Число не пятизначное!");
+        }
+        else{
+            for(int j = 1; j <=10; j=j*10){
+                int x = h % 100;
+                x = x / 10;
+                int y = h / 10000;
+                y = y % 10;
+                if (x != y){
+                    System.Console.WriteLine("Число не является палиндромом.");
+                }
+            }
+        } 
+
+}
+IsPalindrome(12321);
